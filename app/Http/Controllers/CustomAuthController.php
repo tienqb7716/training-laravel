@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
-use Session;
+use Illuminate\Support\Facades\Session;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,18 +29,18 @@ class CustomAuthController extends Controller
 
         return redirect("login")->withSuccess('Login details are not valid');
     }
-
     public function registration()
     {
         return view('auth.registration');
     }
-
     public function customRegistration(Request $request)
     {
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
+            'mssv' => 'required|unique:users',
+            'phone' => 'required|min:10|max:10',
         ]);
 
         $data = $request->all();
@@ -54,7 +54,9 @@ class CustomAuthController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => Hash::make($data['password'])
+            'password' => Hash::make($data['password']),
+            'mssv'=> $data['mssv'],
+            'phone'=> $data['phone'],
         ]);
     }
 

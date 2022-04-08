@@ -24,6 +24,20 @@
                                     @endif
                                 </div>
                                 <div class="form-group mb-3">
+                                    <input type="text" placeholder="Student id" id="mssv" class="form-control"
+                                           name="mssv" required autofocus>
+                                    @if ($errors->has('mssv'))
+                                        <span class="text-danger">{{ $errors->first('mssv') }}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" placeholder="Phone" id="phone" class="form-control"
+                                           name="phone" required autofocus>
+                                    @if ($errors->has('phone'))
+                                        <span class="text-danger">{{ $errors->first('phone') }}</span>
+                                    @endif
+                                </div>
+                                <div class="form-group mb-3">
                                     <input type="password" placeholder="Password" id="password" class="form-control"
                                            name="password" required>
                                     @if ($errors->has('password'))
