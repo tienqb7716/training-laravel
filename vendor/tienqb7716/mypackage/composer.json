@@ -1,0 +1,29 @@
+{
+    "name": "tienqb7716/mypackage",
+    "description": "mypackage",
+    "keywords": [
+        "mypackage"
+    ],
+    "authors": [
+        {
+            "name": "foostart",
+            "email": "foostart.com@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Tienqb7716\\Mypackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": []
+    },
+    "scripts": {},
+    "minimum-stability": "dev",
+    "config": {
+        "preferred-install": "dist"
+    }
+}
