@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "0f9caafad7fdcfa948ddf2828c0d14c5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5125,6 +5125,46 @@
                 }
             ],
             "time": "2022-03-02T12:42:23+00:00"
+        },
+        {
+            "name": "tienqb7716/mypackage",
+            "version": "16.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tientvtdc/mypackage.git",
+                "reference": "7a1544182dffcc4b5c9e58aac325a60ae6def42c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tientvtdc/mypackage/zipball/7a1544182dffcc4b5c9e58aac325a60ae6def42c",
+                "reference": "7a1544182dffcc4b5c9e58aac325a60ae6def42c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tienqb7716\\Mypackage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "foostart",
+                    "email": "foostart.com@gmail.com"
+                }
+            ],
+            "description": "mypackage",
+            "keywords": [
+                "Mypackage"
+            ],
+            "support": {
+                "issues": "https://github.com/tientvtdc/mypackage/issues",
+                "source": "https://github.com/tientvtdc/mypackage/tree/16.0.0"
+            },
+            "time": "2022-04-27T12:48:55+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
