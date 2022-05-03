@@ -21,7 +21,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'mssv',
+        'first_name',
+        'last_name',
         'phone',
     ];
 

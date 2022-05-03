@@ -16,13 +16,14 @@ class CustomAuthController extends Controller
 
     public function customLogin(Request $request)
     {
-        $request->validate([
-            'email' => 'required',
+        $input = $request->all();
+  
+        $this->validate($request, [
+            'name' => 'required',
             'password' => 'required',
         ]);
-
-        $credentials = $request->only('email', 'password');
-        if (Auth::attempt($credentials)) {
+        $fieldType = filter_var($request->name, FILTER_VALIDATE_EMAIL) ? 'email' : 'name';
+        if (auth()->attempt(array($fieldType => $input['name'], 'password' => $input['password']))) {
             return redirect()->intended('dashboard')
                 ->withSuccess('Signed in');
         }
@@ -38,8 +39,9 @@ class CustomAuthController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
+            'first_name' => 'required',
+            'last_name' => 'required',
             'password' => 'required|min:6',
-            'mssv' => 'required|unique:users',
             'phone' => 'required|min:10|max:10',
         ]);
 
@@ -54,8 +56,9 @@ class CustomAuthController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
             'password' => Hash::make($data['password']),
-            'mssv'=> $data['mssv'],
             'phone'=> $data['phone'],
         ]);
     }
