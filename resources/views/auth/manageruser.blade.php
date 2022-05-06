@@ -9,7 +9,6 @@
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
-            <th scope="col">Student ID</th>
           </tr>
         </thead>
         <tbody>
@@ -19,7 +18,6 @@
             <td>{{$u->name}}</td>
             <td>{{$u->email}}</td>
             <td>{{$u->phone}}</td>
-            <td>{{$u->mssv}}</td>
           </tr>
     @endforeach
 
