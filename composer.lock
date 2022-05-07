@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "008b4268a7c6a45b1ce81cbf50fe14af",
+    "content-hash": "45e9319fece38c1810f82545cdac681b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5129,16 +5129,16 @@
         },
         {
             "name": "tienqb7716/mypackage",
-            "version": "17.0.0",
+            "version": "19.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tientvtdc/mypackage.git",
-                "reference": "6866a7594a3ff8edaf0ff6707c1a376683596a17"
+                "reference": "54382befd0ac6d256388cf3d619073a5f4290095"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tientvtdc/mypackage/zipball/6866a7594a3ff8edaf0ff6707c1a376683596a17",
-                "reference": "6866a7594a3ff8edaf0ff6707c1a376683596a17",
+                "url": "https://api.github.com/repos/tientvtdc/mypackage/zipball/54382befd0ac6d256388cf3d619073a5f4290095",
+                "reference": "54382befd0ac6d256388cf3d619073a5f4290095",
                 "shasum": ""
             },
             "type": "library",
@@ -5163,9 +5163,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tientvtdc/mypackage/issues",
-                "source": "https://github.com/tientvtdc/mypackage/tree/17.0.0"
+                "source": "https://github.com/tientvtdc/mypackage/tree/19.0.0"
             },
-            "time": "2022-05-06T15:09:53+00:00"
+            "time": "2022-05-07T03:40:57+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
